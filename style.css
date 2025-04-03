@@ -105,10 +105,10 @@ body {
     font-weight: bold;
 }
 
-.home h3 {
+.home p span {
     color: #444;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .home p {
@@ -122,7 +122,7 @@ body {
 
 .home .couple h3 {
     font-family: "Sacramento";
-    font-size: 2.4rem;
+    font-size: 4rem;
     color: var(--pink);
 }
 
