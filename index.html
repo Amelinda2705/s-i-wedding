@@ -38,7 +38,8 @@
             class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
         >
             <main>
-                <h4>Kepada <span>Bapak/Ibu/Saudara/i,</span></h4>
+                <h4 class="fw-normal">Kepada Yth.</h4>
+                <h3></h3>
                 <h1>Sisil & Iqbal</h1>
                 <p>Akan melangsungkan resepsi pernikahan dalam:</p>
                 <div class="simply-countdown"></div>
@@ -103,9 +104,9 @@
                             Barat
                         </h3>
                         <p>
-                            Oleh karena itu, dengan segala hormat kami
-                            bermaksud untuk mengundang Bapak/Ibu dan Saudara/i
-                            untuk hadir pada acara pernikahan kami.
+                            Oleh karena itu, kami bermaksud untuk mengundang
+                            Bapak/Ibu dan Saudara/i untuk hadir pada acara
+                            pernikahan kami.
                         </p>
                     </div>
                 </div>
@@ -270,9 +271,7 @@
                             <li>
                                 <div
                                     class="timeline-image"
-                                    style="
-                                        background-image: url(img/olim.jpeg);
-                                    "
+                                    style="background-image: url(img/olim.jpeg)"
                                 ></div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
@@ -312,9 +311,7 @@
                             <li>
                                 <div
                                     class="timeline-image"
-                                    style="
-                                        background-image: url(img/2.png);
-                                    "
+                                    style="background-image: url(img/2.png)"
                                 ></div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
@@ -346,7 +343,9 @@
                                     </div>
                                     <div class="timeline-body">
                                         <p>
-                                            Memohon restu dari orang tua dan keluarga untuk menjalin hubungan ke jenjang yang lebih serius. 
+                                            Memohon restu dari orang tua dan
+                                            keluarga untuk menjalin hubungan ke
+                                            jenjang yang lebih serius.
                                         </p>
                                     </div>
                                 </div>
@@ -354,20 +353,17 @@
                             <li>
                                 <div
                                     class="timeline-image"
-                                    style="
-                                        background-image: url(img/akad.jpeg);
-                                    "
+                                    style="background-image: url(img/akad.jpeg)"
                                 ></div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
-                                        <h3>
-                                            Akad Nikah
-                                        </h3>
+                                        <h3>Akad Nikah</h3>
                                         <span>21 Maret 2025</span>
                                     </div>
                                     <div class="timeline-body">
                                         <p>
-                                            Melaksanakan akad nikah secara agama dan negara.
+                                            Melaksanakan akad nikah secara agama
+                                            dan negara.
                                         </p>
                                     </div>
                                 </div>
@@ -554,7 +550,9 @@
                                 ></a>
                             </li>
                             <li>
-                                <a href="https://amelinda.vercel.app/"><i class="bi bi-globe"></i></a>
+                                <a href="https://amelinda.vercel.app/"
+                                    ><i class="bi bi-globe"></i
+                                ></a>
                             </li>
                         </ul>
                     </div>
@@ -697,14 +695,13 @@
         <script>
             const urlParams = new URLSearchParams(window.location.search);
             const nama = urlParams.get("n") || "";
-            const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
             const from = urlParams.get("from") || "16";
             const until = urlParams.get("until") || "18";
-
-            const namaContainer = document.querySelector(".hero h4 span");
+            const namaContainer = document.querySelector(".hero h3");
             const jamContainer = document.querySelector(".info span.jam");
 
-            namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
+            namaContainer.innerText = nama;
+
             jamContainer.innerText = `${from}.00 - ${until}.00`;
 
             document.querySelector("#nama").value = nama;
